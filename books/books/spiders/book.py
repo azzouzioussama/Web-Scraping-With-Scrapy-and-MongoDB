@@ -19,3 +19,4 @@ class BookSpider(scrapy.Spider):
                 next_page_url = response.urljoin(next_page)
                 yield scrapy.Request(url=next_page_url, callback=self.parse)
 
+# The above code defines a Scrapy spider that scrapes book information from the website "books.toscrape.com".

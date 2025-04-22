@@ -33,4 +33,6 @@ class MongoPipeline:
         self.db[self.COLLECTION_NAME].insert_one(ItemAdapter(item).asdict())
         return item
 
-
+class BooksPipeline:
+    def process_item(self, item, spider):
+        return item

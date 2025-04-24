@@ -36,3 +36,4 @@ class MongoPipeline:
 class BooksPipeline:
     def process_item(self, item, spider):
         return item
+    
